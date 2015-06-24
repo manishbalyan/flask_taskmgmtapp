@@ -1,17 +1,18 @@
+# project/_config.py
+
+
 import os
+
 
 # grab the folder where this script lives
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 DATABASE = 'flasktaskr.db'
-USERNAME = 'admin'
-PASSWORD = 'admin'
 CSRF_ENABLED = True
-SECRET_KEY = 'mike'
+SECRET_KEY = 'my_precious'
 
 # define the full path for the database
 DATABASE_PATH = os.path.join(basedir, DATABASE)
 
 # the database uri
-# here we are defining the sqlarchemy database uri to tell sqlalchemy where to access the database
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + DATABASE_PATH
